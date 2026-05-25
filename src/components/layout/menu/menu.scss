@@ -61,8 +61,8 @@
 			&:not(:last-child) {
 				margin-bottom: 30px;
 			}	
-			@media (max-width: toEm($mobileSmall)) {
-				margin-top: 140px;
+			@media (max-width: toEm($mobile)) {
+				margin-top: 80px;
 			}
 		}
 	}
@@ -133,10 +133,11 @@
 		z-index: 5;
 		@media (any-hover: none) {
 			cursor: default;
+			padding-left: 20px;
 		}
 		@media (max-width: toEm($mobileSmall)) {
-			order: 2;
-			margin-left: auto;
+			//order: 2;
+			//margin-left: auto;
 			//background-color: red;
 			}
 		span,

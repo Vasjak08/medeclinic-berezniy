@@ -19,11 +19,11 @@
 	}
 	// .header__logo
 	&__logo,&__link-logo{
-		//@include adaptiveValue("width", 125,80);
-		width: 125px;
+		@include adaptiveValue("width", 125,100);
+		//width: 125px;
 		@media (max-width: toEm($mobileSmall)) {
-			width: 150px;
-			order: 1;
+			//width: 150px;
+			//order: 1;
 			//background-color: red;
 			//left: -35px;
 		}
@@ -43,7 +43,7 @@
 		@include adaptiveValue("padding", 12,8);
 		//padding: 12px;
 		justify-content: space-between;
-		@include adaptiveValue("gap", 15,6);
+		@include adaptiveValue("gap", 15,4);
 		
 		//position: relative;
 		&::before {
@@ -73,7 +73,7 @@
 		}
 	@media (max-width: toEm($mobileSmall)) {
 		display: flex;
-		flex-wrap: wrap;
+		//flex-wrap: wrap;
 		align-items: center;
 		gap: 10px;
 		//display: flex;

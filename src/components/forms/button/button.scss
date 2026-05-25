@@ -37,10 +37,12 @@
 		}
 		@media (max-width: toEm($mobileSmall)) {
 		
-			order: 3;
-			width: 100%;
+			//order: 3;
+			//width: 100%;
 			justify-content: center;
-			
+			text-align: center;
+        padding: 6px;
+		  
 			//font-size: 12px;
 		}
 	}
