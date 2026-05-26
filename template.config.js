@@ -23,8 +23,8 @@ export default {
 		branch: `main`
 	},
 	navpanel: {
-		dev: true,
-		build: true,
+		dev:true,
+		build: true ,
 		position: 'left',
 		color: '#ffffff',
 		background: 'rgba(51, 51, 51, 0.5)',
