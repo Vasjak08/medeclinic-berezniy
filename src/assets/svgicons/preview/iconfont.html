@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Іконковий шрифт</title>
+	<style>
+		html,body{
+			height: 100%;
+		}
+		body{
+			padding: 1.875rem;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 1em;
+			background-color:#333;
+			color:#fff;
+		}
+		.iconfont-page h1{
+			font-size: 1.875rem;
+			margin-bottom: 2rem;
+		}
+		.iconfont-page ul{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2.5rem;
+			margin: 0;
+			padding: 0;
+		}
+		.iconfont-page ul li{
+			margin-bottom: 0.625rem;
+			display: inline-flex;
+			gap: 0.625rem;
+			list-style: none;
+			align-items: center;
+		}
+		.iconfont-page ul li::before{
+			font-size: 2rem;
+		}
+		@font-face { 
+	font-family: "iconfont"; 
+	font-display: swap;
+	src: url("F://medberez/medberez/src/assets/svgicons/preview/iconfont.woff2?3bed5bb5e716d764862c45e98578e4c4") format("woff2"); 
+} 
+[class*="--icon-"]::before{
+	font-family: iconfont; 
+}
+	[class*="--icon-telephone"]::before { 
+		content: "\f101"; 
+	} 
+	[class*="--icon-telegram"]::before { 
+		content: "\f102"; 
+	} 
+	[class*="--icon-slider-arrow"]::before { 
+		content: "\f103"; 
+	} 
+	[class*="--icon-inst"]::before { 
+		content: "\f104"; 
+	} 
+	[class*="--icon-fb"]::before { 
+		content: "\f105"; 
+	} 
+	[class*="--icon-clock"]::before { 
+		content: "\f106"; 
+	} 
+
+	</style>
+</head>
+<body>
+	<div class="iconfont-page">
+		<h1>Перелік іконок та їх класів:</h1>
+		<ul>
+				<li class="--icon-telephone">--icon-telephone</li>
+				<li class="--icon-telegram">--icon-telegram</li>
+				<li class="--icon-slider-arrow">--icon-slider-arrow</li>
+				<li class="--icon-inst">--icon-inst</li>
+				<li class="--icon-fb">--icon-fb</li>
+				<li class="--icon-clock">--icon-clock</li>
+		</ul>
+	</div>
+</body>
+</html>

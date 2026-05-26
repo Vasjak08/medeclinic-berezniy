@@ -1,0 +1,26 @@
+@font-face { 
+	font-family: "iconfont"; 
+	font-display: swap;
+	src: url("F://medberez/medberez/src/assets/svgicons/preview/iconfont.woff2?7b2ab76620de5cb89381834b73518f14") format("woff2"); 
+} 
+[class*="--icon-"]::before{
+	font-family: iconfont; 
+}
+	[class*="--icon-telephone"]::before { 
+		content: "\f101"; 
+	} 
+	[class*="--icon-telegram"]::before { 
+		content: "\f102"; 
+	} 
+	[class*="--icon-slider-arrow"]::before { 
+		content: "\f103"; 
+	} 
+	[class*="--icon-inst"]::before { 
+		content: "\f104"; 
+	} 
+	[class*="--icon-fb"]::before { 
+		content: "\f105"; 
+	} 
+	[class*="--icon-clock"]::before { 
+		content: "\f106"; 
+	} 

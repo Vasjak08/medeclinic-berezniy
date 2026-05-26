@@ -1,0 +1,78 @@
+.blockhead {
+
+   // .blockhead__container
+
+   &__container {
+   }
+
+   // .blockhead__title
+
+   &__title {
+      @include adaptiveValue("font-size", 54,30);
+      //font-size:  64px;
+      line-height: 1,4;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 75px;
+      @media (max-width: toEm($mobile)) {
+         //flex: 0 1 calc(50% - 30px);
+         @include adaptiveValue(" margin-bottom", 40,20);
+         //margin-bottom: 20px;
+                 }
+      &::after{
+         content: "";
+    position: unset;
+    margin: 25px;
+    top: 40px;
+    width:20%;
+    height: 5px;
+    /* right: 40px; */
+    /* left: 50%; */
+    display: flex;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 20%, rgba(230, 221, 50, 1) 80%);
+    //background: $mainColorSocial;
+    /* justify-content: center; */
+    /* display: flex; */
+    /* align-items: center; */
+   
+    justify-self: center;}
+   }
+
+   // .blockhead__title--size-54
+
+   &__title--size-54 {
+      @include adaptiveValue("font-size", 42,20);
+      line-height: 1.5;
+      @include adaptiveValue("padding-block", 140,100);
+      //padding-block: 100px;
+      color: $mainBgColor;
+      //color:$mainColor;
+      text-transform: none;
+      &:not(:last-child) {
+        // margin-bottom: 80px;
+      }	
+      
+   }
+   &__text{
+      @include adaptiveValue("font-size", 32,20);
+      color:$mainColortext;
+      line-height: 1;
+      text-align: center;
+      
+      }
+   // .blockhead__span
+
+   &__span {
+      color: rgb(255, 166, 0);
+      //color: #8bc34a;
+      //color: $mainColorBlockHover;
+      //text-transform: capitalize;
+   font-style: italic;
+   text-transform: uppercase;
+   @include adaptiveValue("font-size", 24,18);
+   //font-size: 24px;
+   }
+   
+
+   }

@@ -1,0 +1,136 @@
+
+.info-item {
+
+   // .info-item__body
+
+   &__body {
+      
+   }
+
+   // .info-item__icon
+
+   &__icon {
+   }
+
+   // .info-item__content
+
+   &__content {
+   }
+
+   // .info-item__value
+
+   &__value {
+   }
+
+   // .info-item__text
+
+   &__text {
+   }
+}
+.--icon-clock {
+}
+.--icon-telephone {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.iteminfo {
+
+   // .iteminfo__container
+
+   &__container {
+      
+   }
+}
+.item {
+   
+
+   &__info {
+      display: flex;
+      justify-content: space-between;
+      color: $mainBgColor;
+      @include adaptiveValue("font-size", 24,18);
+      //font-size: 24px;
+      align-items: center;
+      @media (max-width: toEm($tablet)) {
+         flex-direction: column;
+         
+      }
+   }
+}
+.info-item {
+
+   // .info-item__body
+
+   &__body {
+      display: flex;
+	align-items: center; /* 🔥 іконка по центру двох рядків */
+	gap: 12px;
+	margin-bottom: 20px;
+   @media (any-hover: hover) and (any-pointer: fine) {
+      &:hover {
+         color: rgb(255, 166, 0);
+      }
+   }
+   }
+
+   // .info-item__icon
+
+   &__icon {
+      width: 24px;
+	height: 24px;
+	flex: 1 1 24px;
+   //@include adaptiveValue("font-size",34,20);
+font-size: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+   font-weight: 600;
+   }
+
+   // .info-item__content
+
+   &__content {
+      display: flex;
+	flex-direction: column;
+	gap: 10px;
+   align-items: flex-start;
+   font-weight: 600;
+   
+   }
+
+   // .info-item__value
+
+   &__value {
+   }
+
+   // .info-item__text
+
+   &__text {
+      transition: all 0.3s;
+     
+   }
+}
+.--icon-clock {
+}
+.--icon-telephone {
+}
+.info-itemt {
+
+   // .info-itemt__content
+
+   &__content {
+   }
+}

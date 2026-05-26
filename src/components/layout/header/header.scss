@@ -1,0 +1,92 @@
+.header {
+	position: fixed;
+	top: 15px;
+	left: 0;
+	right: 0;
+	z-index: 50;
+	pointer-events: none;
+	transition:
+		margin-top 0.8s,
+		top 0.8s;
+		
+	
+	@media (min-width: toEm($mobile)) {
+		//top: 48px;
+	}
+	// .header__container
+	&__container {
+		pointer-events: auto;
+	}
+	// .header__logo
+	&__logo,&__link-logo{
+		//@include adaptiveValue("width", 125,80);
+		width: 125px;
+		@media (max-width: toEm($mobileSmall)) {
+			width: 150px;
+			order: 1;
+			//background-color: red;
+			//left: -35px;
+		}
+	}
+	&__logo,
+	&__link-logo,
+	&__button {
+		position: relative;
+		z-index: 5;
+		
+	}
+	// .header__body
+	&__body {
+		display: flex;
+		align-items: center;
+		position: relative;
+		@include adaptiveValue("padding", 12,8);
+		//padding: 12px;
+		justify-content: space-between;
+		@include adaptiveValue("gap", 15,6);
+		
+		//position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			//backdrop-filter: blur(15px);
+			border-radius: 2px;
+			border: 1px solid $mainColorBlock;
+			
+			background-color: $mainColorHead;
+			z-index: 2;
+		}
+
+		@media (min-width: toEm($mobile)) {
+			gap: 32px;
+			padding-left: 24px;
+			
+		}
+		@media (max-width: 411px) {
+			//flex-wrap: wrap;
+			justify-content: center;
+			
+		}
+	@media (max-width: toEm($mobileSmall)) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 10px;
+		//display: flex;
+		//justify-content: center;
+	}
+	}
+	
+	
+}
+.header._header-scroll {
+	//background: red;
+	background: rgba(255,255,255,0.7);
+	//background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+ }
