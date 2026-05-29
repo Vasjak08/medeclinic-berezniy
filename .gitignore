@@ -1,6 +1,6 @@
 .vscode
 *.zip
 node_modules
-dist
+
 .vite
 .env
