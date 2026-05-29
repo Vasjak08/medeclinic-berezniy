@@ -24,7 +24,7 @@ export default {
 	},
 	navpanel: {
 		dev:true,
-		build: true ,
+		build: true,
 		position: 'left',
 		color: '#ffffff',
 		background: 'rgba(51, 51, 51, 0.5)',
