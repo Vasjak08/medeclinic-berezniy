@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { globSync } from 'glob'
 import path from 'path'
 import fs from 'fs'
-
+	
 // Налаштування збірки
 import templateConfig from './template.config.js'
 // Імпортовані модулі
